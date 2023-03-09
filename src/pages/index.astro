@@ -1,20 +1,18 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/header.astro";
+import Hero from "../components/hero.astro";
+import SectionDiv from "../components/section-div.astro";
+import About from "../components/about.astro";
 ---
 
 <MainLayout>
-  <h1 class="hero-header">Making Webs<span class="header-span">i</span>tes</h1>
+  <Header />
+  <Hero />
+  <SectionDiv />
+  <About />
 </MainLayout>
 
 <style lang="scss">
-  .hero-header {
-    font-size: calc(100vw * 0.1);
-	color: transparent;
-	-webkit-text-stroke: black 3px;
-  }
-
-  .header-span {
-	color: rgb(255, 81, 0);
-	-webkit-text-stroke: 0;
-  }
+  
 </style>
