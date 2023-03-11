@@ -1,4 +1,9 @@
 ---
+import About from "../components/about.astro";
+import Header from "../components/header.astro";
+import Hero from "../components/hero.astro";
+import Projects from "../components/projects.astro";
+import SectionDiv from "../components/section-div.astro";
 import "../styles/global.scss";
 ---
 
@@ -12,7 +17,12 @@ import "../styles/global.scss";
   </head>
   <body>
     <div class="wrapper-main">
-      <slot />
+      <Header />
+      <Hero />
+      <SectionDiv />
+      <About />
+      <SectionDiv />
+      <Projects />
     </div>
   </body>
 </html>
