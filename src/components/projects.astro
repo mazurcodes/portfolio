@@ -1,10 +1,50 @@
+---
+import type { ProjectListType } from "../types";
+import ProjectList from "./projectList";
+
+const projects: ProjectListType = [
+  {
+    id: 1,
+    title: "Gifter",
+    description:
+      "How not to love holidays... The clutter is everywhere... maybe as a part of the feeling. The minimalist in me said ‘No’. Get me the gifts that will light me up, help my hobbies, level up my life.",
+  },
+  {
+    id: 2,
+    title: "Commenteer",
+    description:
+      "Funny, engaging, sincere, and truthful viewers. Yup, the struggle of the youtuber... Please leave a comment in the comment section of the video... Or not, I’ll do it for you.",
+  },
+  {
+    id: 3,
+    title: "BackNotes",
+    description:
+      "Your favorite markdown editor... Well, at the beginning of the programming jurney the urge to remember everything is huge. Then you realise that not everything need to be remembered...",
+  },
+  {
+    id: 4,
+    title: "BackNotes API",
+    description:
+      "... and then you need a friend that will run in the background preparing your ‘knowledge’ to be served.",
+  },
+  {
+    id: 5,
+    title: "Weather App",
+    description:
+      "Sole purpose of this app was to become my virtual testing pig... for a react-testing-library.",
+  },
+];
+---
+
 <section class="projects">
   <h2>Projects</h2>
   <p>
     I am focused on React and It’s Meta Frameworks. Every project I present you
     here have a purpose and meaning. Whether it will be implementing some ...,
-    testing components, writing documentation or developing backend infrastructure in Express.
+    testing components, writing documentation or developing backend
+    infrastructure in Express.
   </p>
+  <ProjectList projects={projects}/>
 </section>
 
 <style lang="scss">
