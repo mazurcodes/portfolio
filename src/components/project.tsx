@@ -1,4 +1,4 @@
-import React from "react";
+import "../styles/project.scss";
 import type { ProjectType } from "../types";
 
 type ProjectProps = {
@@ -8,10 +8,16 @@ type ProjectProps = {
 const Project = ({ project }: ProjectProps) => {
   const { id, title, description } = project;
   return (
-    <li>
-      <div className="project-id">{id}</div>
-      <div className="project-title">{title}</div>
-      <div className="project-description">{description}</div>
+    <li className="project">
+      <div className="project-id">
+        {id}
+      </div>
+      <div className="project-title">
+        {title}
+      </div>
+      <div className="project-description">
+        {description}
+      </div>
     </li>
   );
 };

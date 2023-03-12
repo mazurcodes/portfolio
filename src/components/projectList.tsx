@@ -1,25 +1,3 @@
-// ---
-// import type { ProjectListType, ProjectType } from "../types";
-// import Project from "./project.astro";
-
-// interface Props {
-//   projects: ProjectListType;
-// }
-
-// const projectsData = Astro.props;
-// // const projectList = projectsData.map((project: ProjectType) => {
-// //   <Project project={project} />;
-// // });
-// ---
-
-// <ul>
-//   {
-//     projectsData.map((project: ProjectType) => {
-//       <Project project={project} />;
-//     })
-//   }
-// </ul>
-
 import React from "react";
 import type { ProjectListType } from "../types";
 import Project from "./project";

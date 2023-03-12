@@ -1,0 +1,22 @@
+.project {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  padding: 100px;
+  border-bottom: 1px solid black;
+}
+
+.project-id {
+  width: 100px;
+}
+
+.project-title {
+  width: 300px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.project-description {
+  width: 500px;
+  text-align: left;
+}
