@@ -8,7 +8,7 @@ type ProjectProps = {
 const Project = ({ project }: ProjectProps) => {
   const { id, title, description } = project;
   return (
-    <li className="project">
+    <li className="project" key={id}>
       <div className="project-id">
         {id}
       </div>

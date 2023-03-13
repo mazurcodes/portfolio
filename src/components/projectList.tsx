@@ -1,4 +1,3 @@
-import React from "react";
 import type { ProjectListType } from "../types";
 import Project from "./project";
 
