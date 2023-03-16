@@ -10,13 +10,13 @@ const Project = ({ project }: ProjectProps) => {
   return (
     <li className="project" key={id}>
       <div className="project-id">
-        {id}
+        <p>{id}</p>
       </div>
       <div className="project-title">
-        {title}
+        <p>{title}</p>
       </div>
       <div className="project-description">
-        {description}
+        <p>{description}</p>
       </div>
     </li>
   );
