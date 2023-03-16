@@ -1,10 +1,6 @@
 ---
-import About from "../components/about.astro";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
-import Hero from "../components/hero.astro";
-import Projects from "../components/projects.astro";
-import SectionDiv from "../components/section-div.astro";
 import "../styles/global.scss";
 
 const {title} = Astro.props
@@ -21,11 +17,6 @@ const {title} = Astro.props
   <body>
     <div class="wrapper-main">
       <Header />
-      <Hero />
-      <SectionDiv />
-      <About />
-      <SectionDiv />
-      <Projects />
       <Footer />
     </div>
   </body>
