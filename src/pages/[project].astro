@@ -1,0 +1,16 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+export function getStaticPaths() {
+  return [
+    {params: {project: 'gifter'}},
+    {params: {project: 'commenteer'}},
+    {params: {project: 'backnotes'}},
+    {params: {project: 'backnotesApi'}},
+    {params: {project: 'weatherApp'}},
+  ];
+}
+
+const {project} = Astro.params
+---
+<ProjectLayout title={project} />
