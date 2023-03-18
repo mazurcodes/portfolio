@@ -1,12 +1,12 @@
 ---
 interface Props {
-  title: string;
+  title?: string;
 }
 const { title } = Astro.props;
 ---
 
 <section class="hero">
-  <h1></h1>
+  <h1>{title}</h1>
 </section>
 
 <style lang="scss">
