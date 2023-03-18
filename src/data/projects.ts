@@ -4,7 +4,8 @@ export const projectsData: ProjectsDataType = {
   gifter: {
     id: 1,
     title: "Gifter",
-    description: "",
+    description:
+      "How not to love holidays... The clutter is everywhere... maybe as a part of the feeling. The minimalist in me said ‘No’. Get me the gifts that will light me up, help my hobbies, level up my life.",
     overview: "",
     technologies: ["react", "nextjs"],
     userFlow: ["main", "search"],
@@ -15,7 +16,8 @@ export const projectsData: ProjectsDataType = {
   commenteer: {
     id: 2,
     title: "Commenteer",
-    description: "",
+    description:
+      "Funny, engaging, sincere, and truthful viewers. Yup, the struggle of the youtuber... Please leave a comment in the comment section of the video... Or not, I’ll do it for you.",
     overview: "",
     technologies: ["react", "nextjs"],
     userFlow: ["main", "search"],
@@ -26,7 +28,8 @@ export const projectsData: ProjectsDataType = {
   backnotes: {
     id: 3,
     title: "BackNotes",
-    description: "",
+    description:
+      "Your favorite markdown editor... Well, at the beginning of the programming jurney the urge to remember everything is huge. Then you realise that not everything need to be remembered...",
     overview: "",
     technologies: ["react", "nextjs"],
     userFlow: ["main", "search"],
@@ -37,7 +40,8 @@ export const projectsData: ProjectsDataType = {
   backnotesApi: {
     id: 4,
     title: "BackNotesAPI",
-    description: "",
+    description:
+      "... and then you need a friend that will run in the background preparing your ‘knowledge’ to be served.",
     overview: "",
     technologies: ["react", "nextjs"],
     userFlow: ["main", "search"],
@@ -48,7 +52,8 @@ export const projectsData: ProjectsDataType = {
   weatherApp: {
     id: 5,
     title: "Weather App",
-    description: "",
+    description:
+      "Sole purpose of this app was to become my virtual testing pig... for a react-testing-library.",
     overview: "",
     technologies: ["react", "nextjs"],
     userFlow: ["main", "search"],
