@@ -1,9 +1,14 @@
 ---
+import type { ProjectType } from "src/types";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
+import ProjectHero from "../components/project-page/project-hero.astro";
 import "../styles/global.scss";
 
-const {title} = Astro.props
+interface Props {
+  project: ProjectType;
+}
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -12,11 +17,12 @@ const {title} = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{title || "Project"}</title>
   </head>
   <body>
     <div class="wrapper-main">
       <Header />
+      <ProjectHero title={title} />
       <Footer />
     </div>
   </body>
