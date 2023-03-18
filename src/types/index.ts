@@ -1,5 +1,6 @@
 export type ProjectType = {
   id: number;
+  slug: string;
   title: string;
   description: string;
   overview?: string;
@@ -11,7 +12,3 @@ export type ProjectType = {
 };
 
 export type ProjectListType = ProjectType[];
-
-export type ProjectsDataType = {
-  [key: string]: ProjectType;
-};

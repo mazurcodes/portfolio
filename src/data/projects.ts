@@ -1,8 +1,9 @@
-import type { ProjectsDataType } from "../types";
+import type { ProjectListType } from "../types";
 
-export const projectsData: ProjectsDataType = {
-  gifter: {
+export const projectsData: ProjectListType = [
+  {
     id: 1,
+    slug: 'gifter',
     title: "Gifter",
     description:
       "How not to love holidays... The clutter is everywhere... maybe as a part of the feeling. The minimalist in me said ‘No’. Get me the gifts that will light me up, help my hobbies, level up my life.",
@@ -13,8 +14,9 @@ export const projectsData: ProjectsDataType = {
     typography: "Arial",
     screenPaths: ["@assets/gifter-01.png"],
   },
-  commenteer: {
+  {
     id: 2,
+    slug: 'commenteer',
     title: "Commenteer",
     description:
       "Funny, engaging, sincere, and truthful viewers. Yup, the struggle of the youtuber... Please leave a comment in the comment section of the video... Or not, I’ll do it for you.",
@@ -25,8 +27,9 @@ export const projectsData: ProjectsDataType = {
     typography: "Arial",
     screenPaths: ["@assets/gifter-01.png"],
   },
-  backnotes: {
+  {
     id: 3,
+    slug: 'backnotes',
     title: "BackNotes",
     description:
       "Your favorite markdown editor... Well, at the beginning of the programming jurney the urge to remember everything is huge. Then you realise that not everything need to be remembered...",
@@ -37,8 +40,9 @@ export const projectsData: ProjectsDataType = {
     typography: "Arial",
     screenPaths: ["@assets/gifter-01.png"],
   },
-  backnotesApi: {
+  {
     id: 4,
+    slug: 'backnotesapi',
     title: "BackNotesAPI",
     description:
       "... and then you need a friend that will run in the background preparing your ‘knowledge’ to be served.",
@@ -49,8 +53,9 @@ export const projectsData: ProjectsDataType = {
     typography: "Arial",
     screenPaths: ["@assets/gifter-01.png"],
   },
-  weatherApp: {
+  {
     id: 5,
+    slug: 'weatherapp',
     title: "Weather App",
     description:
       "Sole purpose of this app was to become my virtual testing pig... for a react-testing-library.",
@@ -61,4 +66,4 @@ export const projectsData: ProjectsDataType = {
     typography: "Arial",
     screenPaths: ["@assets/gifter-01.png"],
   },
-};
+];
