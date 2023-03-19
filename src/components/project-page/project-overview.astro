@@ -1,27 +1,25 @@
+---
+interface Props {
+  overviewText: string | undefined;
+}
+const { overviewText } = Astro.props;
+---
+
 <section class="overview">
-  <h2>Overview</h2>
+  <h3>Overview</h3>
   <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis magni
-    velit aperiam molestiae quas rerum, tempore suscipit unde enim et natus,
-    doloribus facilis, odio at corporis consequuntur voluptatem dolorum
-    recusandae inventore atque maxime assumenda perspiciatis explicabo! Nobis
-    voluptatibus a enim officiis unde totam ex libero? Non mollitia cumque odio.
-    Accusamus repellendus temporibus architecto, dolores, nemo amet, eligendi
-    officia nisi quae asperiores laudantium voluptates iste numquam nulla
-    molestiae illo magnam fugiat autem illum! Exercitationem, consectetur ab
-    perspiciatis nam corrupti molestiae magni pariatur sapiente.
+    {overviewText}
   </p>
 </section>
 
 <style lang="scss">
   .overview {
-    h2 {
-      font-weight: 900;
-      font-size: calc(100vw * 0.035);
-      padding-bottom: 100px;
+    text-align: left;
+    
+    h3 {
+      padding-bottom: 30px;
     }
     p {
-      text-align: left;
       padding-bottom: 30px;
     }
   }
