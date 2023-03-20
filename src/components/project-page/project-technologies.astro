@@ -1,6 +1,5 @@
 ---
 import type { TechnologiesListType } from "@types";
-import { isAstroComponentFactory } from "astro/dist/runtime/server/render/astro";
 
 interface Props {
   technologies: TechnologiesListType | undefined;
@@ -21,7 +20,6 @@ const { technologies } = Astro.props;
             alt={`${tech.title} logo`}
           />
           <p>{tech.title}</p>
-          {tech.title}
         </li>
       ))
     }
