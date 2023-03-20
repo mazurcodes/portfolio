@@ -18,7 +18,7 @@ export type TechnologiesType = {
   slug: string;
   title: string;
   description: string;
-  iconPath: string;
+  img: string;
 };
 
 export type TechnologiesListType = TechnologiesType[];

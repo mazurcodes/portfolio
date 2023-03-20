@@ -1,21 +1,37 @@
 ---
 import type { TechnologiesListType } from "@types";
+import { isAstroComponentFactory } from "astro/dist/runtime/server/render/astro";
 
 interface Props {
   technologies: TechnologiesListType | undefined;
 }
 
-const technologies = Astro.props;
+const { technologies } = Astro.props;
 ---
 
 <section class="technologies">
-  <h3>Overview</h3>
-  <div class="tech-row"></div>
+  <h3>Technologies</h3>
+  <ul class="tech-row">
+    {
+      technologies?.map((tech) => (
+        <li class="tech-component">
+          <img
+            class="tech-icon"
+            src={`/assets/${tech.img}`}
+            alt={`${tech.title} logo`}
+          />
+          {tech.title}
+        </li>
+      ))
+    }
+  </ul>
 </section>
 
 <style lang="scss">
   .technologies {
+    width: 100%;
     text-align: left;
+    padding: 0 200px;
 
     h3 {
       padding-bottom: 30px;

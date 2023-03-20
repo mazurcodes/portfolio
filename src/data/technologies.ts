@@ -6,7 +6,7 @@ export const technologiesData: TechnologiesListType = [
     slug: "react",
     title: "React",
     description: "UI library from Facebook",
-    iconPath: "../assets/someicon.svg",
+    img: "react-tech-ico.svg",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ export const technologiesData: TechnologiesListType = [
     title: "Astro",
     description:
       "Astro is a web framework designed for speed where we can use our favorite UI components and libraries.",
-    iconPath: "../assets/someicon.svg",
+    img: "astro-tech-ico.svg",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const technologiesData: TechnologiesListType = [
     title: "HTML",
     description:
       "The HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser.",
-    iconPath: "../assets/someicon.svg",
+    img: "html-tech-ico.svg",
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ export const technologiesData: TechnologiesListType = [
     title: "SCSS",
     description:
       "Sassy Cascading Style Sheets or SCSS is a superset of the CSS language that allows web designers more freedom and control when designing web designs by adding new features to CSS.",
-    iconPath: "../assets/someicon.svg",
+    img: "scss-tech-ico.svg",
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ export const technologiesData: TechnologiesListType = [
     title: "TypeScript",
     description:
       "TypeScript is a free and open source high-level programming language. It is a strict syntactical superset of JavaScript",
-    iconPath: "../assets/someicon.svg",
+    img: "typescript-tech-ico.svg",
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ export const technologiesData: TechnologiesListType = [
     title: "JavaScript",
     description:
       "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web,",
-    iconPath: "../assets/someicon.svg",
+    img: "javascript-tech-ico.svg",
   },
   {
     id: 7,
@@ -54,7 +54,7 @@ export const technologiesData: TechnologiesListType = [
     title: "ExpressJS",
     description:
       "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
-    iconPath: "../assets/someicon.svg",
+    img: "express-tech-ico.svg",
   },
   {
     id: 8,
@@ -62,7 +62,7 @@ export const technologiesData: TechnologiesListType = [
     title: "Cypress",
     description:
       "Cypress is a next generation front end testing tool built for the modern web.",
-    iconPath: "../assets/someicon.svg",
+    img: "cypress-tech-ico.svg",
   },
   {
     id: 9,
@@ -70,7 +70,7 @@ export const technologiesData: TechnologiesListType = [
     title: "Playwright",
     description:
       "Playwright enables reliable end-to-end testing for modern web apps.",
-    iconPath: "../assets/someicon.svg",
+    img: "playwright-tech-ico.svg",
   },
   {
     id: 10,
@@ -78,7 +78,7 @@ export const technologiesData: TechnologiesListType = [
     title: "Vitest",
     description:
       "Vitest is the unit testing framework built on top of Vite and is an excellent unit test framework with many modern features such as: Component testing for Vue, React, Svelte, Lit and more.",
-    iconPath: "../assets/someicon.svg",
+    img: "vitest-tech-ico.svg",
   },
   {
     id: 11,
@@ -86,6 +86,6 @@ export const technologiesData: TechnologiesListType = [
     title: "NextJS",
     description:
       "NextJS is a meta framework for React UI components",
-    iconPath: "../assets/someicon.svg",
+    img: "nextjs-tech-ico.svg",
   },
 ];
