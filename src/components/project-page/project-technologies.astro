@@ -1,0 +1,27 @@
+---
+import type { TechnologiesListType } from "@types";
+
+interface Props {
+  technologies: TechnologiesListType | undefined;
+}
+
+const technologies = Astro.props;
+---
+
+<section class="technologies">
+  <h3>Overview</h3>
+  <div class="tech-row"></div>
+</section>
+
+<style lang="scss">
+  .technologies {
+    text-align: left;
+
+    h3 {
+      padding-bottom: 30px;
+    }
+  }
+  .tech-row {
+    padding-bottom: 30px;
+  }
+</style>
