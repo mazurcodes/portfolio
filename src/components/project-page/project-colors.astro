@@ -1,0 +1,24 @@
+---
+import ProjectColorBlock from './project-color-block.astro';
+
+interface Props {
+  colors: string[] | undefined;
+}
+const { colors } = Astro.props;
+---
+
+<section class="colors">
+  <h3>Colors</h3>
+  <ProjectColorBlock color={colors ? colors[0] : 'red'} large/>
+</section>
+
+<style lang="scss">
+  .colors {
+    width: 100%;
+    padding: 0 200px;
+
+    h3 {
+      padding-bottom: 90px;
+    }
+  }
+</style>

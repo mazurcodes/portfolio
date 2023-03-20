@@ -1,0 +1,36 @@
+---
+interface Props {
+  color: string;
+  large?: boolean;
+}
+
+const { color, large } = Astro.props;
+---
+
+<div
+  class={`color-block ${large && "large"}`}
+  style={`background-color: ${color};`}
+>
+  <div class="color-name">{color}</div>
+</div>
+
+<style>
+  .color-block {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+  .color-block.large {
+    width: 440px;
+    height: 440px;
+  }
+  .color-name {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+  }
+</style>

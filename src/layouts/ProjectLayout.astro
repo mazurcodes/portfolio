@@ -9,6 +9,7 @@ import { projectsData } from "@data/projects";
 import { technologiesData } from "@data/technologies";
 import ProjectTechnologies from "@components/project-page/project-technologies.astro";
 import SectionDiv from "@components/section-div.astro";
+import ProjectColors from "@components/project-page/project-colors.astro";
 
 interface Props {
   title?: string;
@@ -43,6 +44,7 @@ const technologies = technologiesData.filter((tech) => {
       <SectionDiv size="small"/>
       <ProjectTechnologies technologies={technologies} />
       <SectionDiv size="large"/>
+      <ProjectColors colors={project?.colors}/>
       <Footer />
     </div>
   </body>
