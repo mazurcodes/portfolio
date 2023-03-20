@@ -1,12 +1,29 @@
+---
+interface Props {
+  size: "small" | "large";
+}
+const { size } = Astro.props;
+---
+
 <div class="section-divider">
-    <div class="divider-line"></div>
+  <div class={`divider-line ${size}`}></div>
 </div>
 
 <style lang="scss">
-    .divider-line {
-        margin: 200px;
-        height: 1px;
-        width: 300px;
-        background-color: rgb(218, 218, 218);
-    }
+  .section-divider {
+    display: flex;
+    justify-content: center;
+
+    padding: 200px 0;
+    width: 100%;
+  }
+  .divider-line {
+    height: 1px;
+    width: 300px;
+    background-color: rgb(218, 218, 218);
+  }
+
+  .divider-line.large {
+    width: 100%;
+  }
 </style>

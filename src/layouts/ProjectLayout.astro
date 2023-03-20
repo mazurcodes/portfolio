@@ -40,8 +40,9 @@ const technologies = technologiesData.filter((tech) => {
       <ProjectHero title={project?.title} />
       <ProjectOverview overviewText={project?.description} />
       <!-- TODO: description for now, overview in the future -->
-      <SectionDiv />
+      <SectionDiv size="small"/>
       <ProjectTechnologies technologies={technologies} />
+      <SectionDiv size="large"/>
       <Footer />
     </div>
   </body>
