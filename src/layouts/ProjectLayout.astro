@@ -6,6 +6,8 @@ import ProjectHero from "@components/project-page/project-hero.astro";
 import ProjectOverview from "@components/project-page/project-overview.astro";
 import "@styles/global.scss";
 import { projectsData } from "@data/projects";
+import { technologiesData } from "@data/technologies";
+import ProjectTechnologies from "@components/project-page/project-technologies.astro";
 
 interface Props {
   title?: string;
@@ -13,6 +15,14 @@ interface Props {
 const { title } = Astro.props;
 
 const project = projectsData.find((proj) => proj.slug === title);
+
+const technologies = technologiesData.filter((tech) => {
+  const techSlug = project?.technologies?.find(
+    (projectTech) => projectTech === tech.slug
+  );
+  return techSlug;
+});
+
 ---
 
 <html lang="en">
@@ -29,6 +39,7 @@ const project = projectsData.find((proj) => proj.slug === title);
       <ProjectHero title={project?.title} />
       <ProjectOverview overviewText={project?.description} />
       <!-- TODO: description for now, overview in the future -->
+      <ProjectTechnologies technologies={technologies} />
       <Footer />
     </div>
   </body>
