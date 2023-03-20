@@ -1,5 +1,5 @@
 import type { ProjectListType } from "../types";
-import Project from "./project";
+import Project from "@components/project";
 
 type ProjectListProps = {
   projects: ProjectListType;

@@ -1,4 +1,4 @@
-import type { TechnologiesListType } from "src/types";
+import type { TechnologiesListType } from "../types";
 
 export const technologiesData: TechnologiesListType = [
   {
