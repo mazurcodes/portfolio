@@ -1,5 +1,6 @@
 ---
 import type { TechnologiesListType } from "@types";
+import ProjectTechIcon from "./project-tech-icon";
 
 interface Props {
   technologies: TechnologiesListType | undefined;
@@ -11,18 +12,7 @@ const { technologies } = Astro.props;
 <section class="technologies">
   <h3>Technologies</h3>
   <ul class="tech-row">
-    {
-      technologies?.map((tech) => (
-        <li class="tech-component">
-          <img
-            class="tech-icon"
-            src={`/assets/${tech.img}`}
-            alt={`${tech.title} logo`}
-          />
-          <p>{tech.title}</p>
-        </li>
-      ))
-    }
+    {technologies?.map((tech) => <ProjectTechIcon tech={tech} />)}
   </ul>
 </section>
 
@@ -41,11 +31,5 @@ const { technologies } = Astro.props;
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 30px;
-  }
-
-  .tech-component {
-    text-align: center;
-    list-style: none;
-    padding-right: 20px;
   }
 </style>

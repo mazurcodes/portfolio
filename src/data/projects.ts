@@ -4,12 +4,24 @@ import type { ProjectListType } from "../types";
 export const projectsData: ProjectListType = [
   {
     id: 1,
-    slug: 'gifter',
+    slug: "gifter",
     title: "Gifter",
     description:
       "How not to love holidays... The clutter is everywhere... maybe as a part of the feeling. The minimalist in me said ‘No’. Get me the gifts that will light me up, help my hobbies, level up my life.",
     overview: "",
-    technology: [TechStack.REACT, TechStack.NEXTJS],
+    technology: [
+      TechStack.REACT,
+      TechStack.NEXTJS,
+      TechStack.ASTRO,
+      TechStack.CYPRESS,
+      TechStack.EXPRESSJS,
+      TechStack.HTML,
+      TechStack.JAVASCRIPT,
+      TechStack.TYPESCRIPT,
+      TechStack.PLAYWRIGHT,
+      TechStack.SCSS,
+      TechStack.VITEST,
+    ],
     userFlow: ["main", "search"],
     colors: ["dddddd", "#d2d2d2"],
     typography: "Arial",
@@ -17,7 +29,7 @@ export const projectsData: ProjectListType = [
   },
   {
     id: 2,
-    slug: 'commenteer',
+    slug: "commenteer",
     title: "Commenteer",
     description:
       "Funny, engaging, sincere, and truthful viewers. Yup, the struggle of the youtuber... Please leave a comment in the comment section of the video... Or not, I’ll do it for you.",
@@ -30,7 +42,7 @@ export const projectsData: ProjectListType = [
   },
   {
     id: 3,
-    slug: 'backnotes',
+    slug: "backnotes",
     title: "BackNotes",
     description:
       "Your favorite markdown editor... Well, at the beginning of the programming jurney the urge to remember everything is huge. Then you realise that not everything need to be remembered...",
@@ -43,7 +55,7 @@ export const projectsData: ProjectListType = [
   },
   {
     id: 4,
-    slug: 'backnotesapi',
+    slug: "backnotesapi",
     title: "BackNotesAPI",
     description:
       "... and then you need a friend that will run in the background preparing your ‘knowledge’ to be served.",
@@ -56,7 +68,7 @@ export const projectsData: ProjectListType = [
   },
   {
     id: 5,
-    slug: 'weatherapp',
+    slug: "weatherapp",
     title: "Weather App",
     description:
       "Sole purpose of this app was to become my virtual testing pig... for a react-testing-library.",
