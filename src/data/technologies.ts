@@ -1,16 +1,17 @@
 import type { TechnologiesListType } from "@types";
+import { TechStack } from "src/types/constants";
 
 export const technologiesData: TechnologiesListType = [
   {
     id: 1,
-    slug: "react",
+    slug: TechStack.REACT,
     title: "React",
     description: "UI library from Facebook",
     img: "react-tech-ico.svg",
   },
   {
     id: 2,
-    slug: "astro",
+    slug: TechStack.ASTRO,
     title: "Astro",
     description:
       "Astro is a web framework designed for speed where we can use our favorite UI components and libraries.",
@@ -18,7 +19,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 3,
-    slug: "html",
+    slug: TechStack.HTML,
     title: "HTML",
     description:
       "The HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser.",
@@ -26,7 +27,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 4,
-    slug: "scss",
+    slug: TechStack.SCSS,
     title: "SCSS",
     description:
       "Sassy Cascading Style Sheets or SCSS is a superset of the CSS language that allows web designers more freedom and control when designing web designs by adding new features to CSS.",
@@ -34,7 +35,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 5,
-    slug: "typescript",
+    slug: TechStack.TYPESCRIPT,
     title: "TypeScript",
     description:
       "TypeScript is a free and open source high-level programming language. It is a strict syntactical superset of JavaScript",
@@ -42,7 +43,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 6,
-    slug: "javascript",
+    slug: TechStack.JAVASCRIPT,
     title: "JavaScript",
     description:
       "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web,",
@@ -50,7 +51,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 7,
-    slug: "express",
+    slug: TechStack.EXPRESSJS,
     title: "ExpressJS",
     description:
       "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
@@ -58,7 +59,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 8,
-    slug: "cypress",
+    slug: TechStack.CYPRESS,
     title: "Cypress",
     description:
       "Cypress is a next generation front end testing tool built for the modern web.",
@@ -66,7 +67,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 9,
-    slug: "playwright",
+    slug: TechStack.PLAYWRIGHT,
     title: "Playwright",
     description:
       "Playwright enables reliable end-to-end testing for modern web apps.",
@@ -74,7 +75,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 10,
-    slug: "vitest",
+    slug: TechStack.PLAYWRIGHT,
     title: "Vitest",
     description:
       "Vitest is the unit testing framework built on top of Vite and is an excellent unit test framework with many modern features such as: Component testing for Vue, React, Svelte, Lit and more.",
@@ -82,7 +83,7 @@ export const technologiesData: TechnologiesListType = [
   },
   {
     id: 11,
-    slug: "nextjs",
+    slug: TechStack.NEXTJS,
     title: "NextJS",
     description:
       "NextJS is a meta framework for React UI components",

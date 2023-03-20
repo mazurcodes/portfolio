@@ -18,7 +18,7 @@ const { title } = Astro.props;
 const project = projectsData.find((proj) => proj.slug === title);
 
 const technologies = technologiesData.filter((tech) => {
-  const techSlug = project?.technologies?.find(
+  const techSlug = project?.technology?.find(
     (projectTech) => projectTech === tech.slug
   );
   return techSlug;
