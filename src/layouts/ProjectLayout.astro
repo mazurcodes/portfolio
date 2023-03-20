@@ -8,6 +8,7 @@ import "@styles/global.scss";
 import { projectsData } from "@data/projects";
 import { technologiesData } from "@data/technologies";
 import ProjectTechnologies from "@components/project-page/project-technologies.astro";
+import SectionDiv from "@components/section-div.astro";
 
 interface Props {
   title?: string;
@@ -39,6 +40,7 @@ const technologies = technologiesData.filter((tech) => {
       <ProjectHero title={project?.title} />
       <ProjectOverview overviewText={project?.description} />
       <!-- TODO: description for now, overview in the future -->
+      <SectionDiv />
       <ProjectTechnologies technologies={technologies} />
       <Footer />
     </div>

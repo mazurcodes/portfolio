@@ -14,12 +14,16 @@ const { overviewText } = Astro.props;
 
 <style lang="scss">
   .overview {
-    text-align: left;
+    width: 100%;
+    // text-align: left;
+    padding: 0 200px;
+    // TODO: width 100% padding 0 200px to match footer section / maby wrapper?
     
     h3 {
       padding-bottom: 30px;
     }
     p {
+      max-width: 50%;
       padding-bottom: 30px;
     }
   }

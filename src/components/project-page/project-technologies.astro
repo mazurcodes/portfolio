@@ -20,7 +20,7 @@ const { technologies } = Astro.props;
             src={`/assets/${tech.img}`}
             alt={`${tech.title} logo`}
           />
-          {tech.title}
+          <p>{tech.title}</p>
         </li>
       ))
     }
@@ -30,7 +30,7 @@ const { technologies } = Astro.props;
 <style lang="scss">
   .technologies {
     width: 100%;
-    text-align: left;
+    // text-align: left;
     padding: 0 200px;
 
     h3 {
@@ -38,6 +38,15 @@ const { technologies } = Astro.props;
     }
   }
   .tech-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 30px;
+  }
+
+  .tech-component {
+    text-align: center;
+    list-style: none;
+    padding-right: 20px;
   }
 </style>
