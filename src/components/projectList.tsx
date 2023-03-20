@@ -6,7 +6,7 @@ type ProjectListProps = {
 };
 
 const ProjectList = ({ projects }: ProjectListProps) => {
-  const projectsList = projects.map((project) => <Project project={project} />);
+  const projectsList = projects.map((project) => <Project project={project} key={project.id}/>);
 
   return <ul>{projectsList}</ul>;
 };
