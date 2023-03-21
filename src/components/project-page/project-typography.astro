@@ -9,7 +9,7 @@ const { typography } = Astro.props;
 
 <section class="typography">
   <h3>Typography</h3>
-  <div class="typography-grid">
+  <div class="typography-grid" style={`font-family: ${typography?.font}, sans-serif;`}>
     <p class="typography-letter">A</p>
     <p class="typography-font">
       <span class="typography-span">font</span>{typography?.font}
@@ -31,6 +31,7 @@ const { typography } = Astro.props;
 
 
 <style lang="scss">
+  @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
   .typography {
     h3 {
       padding-bottom: 90px;
@@ -44,26 +45,27 @@ const { typography } = Astro.props;
       "letter font"
       "letter weights"
       "letter alphabet";
+
+    
     font-size: 24px;
+    align-items: center;
   }
 
   .typography-letter {
     grid-area: letter;
     font-size: 600px;
     font-weight: 900;
+    line-height: 450px;
   }
   .typography-font {
     grid-area: font;
     font-weight: 700;
-    align-self: center;
   }
   .typography-weights {
     grid-area: weights;
-    align-self: center;
   }
   .typography-alphabet {
     grid-area: alphabet;
-    align-self: center;
   }
   .typography-span {
     display: block;
