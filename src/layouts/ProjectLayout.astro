@@ -39,8 +39,7 @@ const technologies = technologiesData.filter((tech) => {
     <div class="wrapper-main">
       <Header />
       <ProjectHero title={project?.title} />
-      <ProjectOverview overviewText={project?.description} />
-      <!-- TODO: description for now, overview in the future -->
+      <ProjectOverview overviewText={project?.overview} />
       <SectionDiv size="small" />
       <ProjectTechnologies technologies={technologies} />
       <SectionDiv size="large" />
@@ -57,7 +56,8 @@ const technologies = technologiesData.filter((tech) => {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     min-height: 100vh;
-    padding: 0 100px;
+    padding: 0 300px;
   }
 </style>
