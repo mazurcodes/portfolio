@@ -1,5 +1,5 @@
 ---
-import ProjectColorBlock from './project-color-block.astro';
+import ProjectColorBlock from "./project-color-block.astro";
 
 interface Props {
   colors: string[] | undefined;
@@ -9,7 +9,11 @@ const { colors } = Astro.props;
 
 <section class="colors">
   <h3>Colors</h3>
-  <ProjectColorBlock color={colors ? colors[0] : 'red'} large/>
+  <div class="colors-grid">
+    <ProjectColorBlock color={colors ? colors[0] : "red"} />
+    <ProjectColorBlock color={colors ? colors[1] : "red"} />
+    <ProjectColorBlock color={colors ? colors[2] : "red"} />
+  </div>
 </section>
 
 <style lang="scss">
@@ -19,6 +23,15 @@ const { colors } = Astro.props;
 
     h3 {
       padding-bottom: 90px;
+    }
+    .colors-grid {
+      display: grid;
+      grid-template-columns: 400px 200px 200px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas: 
+        "large-block small-block-1 small-block-3"
+        "large-block small-block-2 small-block-4";
+      gap: 20px;
     }
   }
 </style>

@@ -23,7 +23,7 @@ export const projectsData: ProjectListType = [
       TechStack.VITEST,
     ],
     userFlow: ["main", "search"],
-    colors: ["#422400", "#d2d2d2"],
+    colors: ["#422400", "#d2d2d2", "#ffd11aff"],
     typography: "Arial",
     screenPaths: ["@assets/gifter-01.png"],
   },
