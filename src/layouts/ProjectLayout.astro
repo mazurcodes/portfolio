@@ -10,6 +10,7 @@ import { technologiesData } from "@data/technologies";
 import ProjectTechnologies from "@components/project-page/project-technologies.astro";
 import SectionDiv from "@components/section-div.astro";
 import ProjectColors from "@components/project-page/project-colors.astro";
+import ProjectTypography from "@components/project-page/project-typography.astro";
 
 interface Props {
   title?: string;
@@ -24,7 +25,6 @@ const technologies = technologiesData.filter((tech) => {
   );
   return techSlug;
 });
-
 ---
 
 <html lang="en">
@@ -41,10 +41,12 @@ const technologies = technologiesData.filter((tech) => {
       <ProjectHero title={project?.title} />
       <ProjectOverview overviewText={project?.description} />
       <!-- TODO: description for now, overview in the future -->
-      <SectionDiv size="small"/>
+      <SectionDiv size="small" />
       <ProjectTechnologies technologies={technologies} />
-      <SectionDiv size="large"/>
-      <ProjectColors colors={project?.colors}/>
+      <SectionDiv size="large" />
+      <ProjectColors colors={project?.colors} />
+      <SectionDiv size="large" />
+      <ProjectTypography typography={project?.typography} />
       <Footer />
     </div>
   </body>

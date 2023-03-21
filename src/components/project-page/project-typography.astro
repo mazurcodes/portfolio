@@ -1,0 +1,76 @@
+---
+import type { TypographyType } from "@types";
+
+interface Props {
+  typography: TypographyType | undefined;
+}
+const { typography } = Astro.props;
+---
+
+<section class="typography">
+  <h3>Typography</h3>
+  <div class="typography-grid">
+    <p class="typography-letter">A</p>
+    <p class="typography-font">
+      <span class="typography-span">font</span>{typography?.font}
+    </p>
+    <p class="typography-weights">
+      <span class="typography-span">weights</span>{
+        typography?.weights.map((weight) => (
+          <span style={`font-weight: ${weight}`}>{weight} </span>
+        ))
+      }
+    </p>
+    <p class="typography-alphabet">
+      A a B b C c D d E e F f G g H h I i J j K k L l Ł ł M m N n O o P p Q q R
+      r S s T s U u Ó ó W w X x Y y Z z <br> 1 2 3 4 5 6 7 8 9 0
+    </p>
+  </div>
+</section>
+
+<style lang="scss">
+  .typography {
+    width: 100%;
+    padding: 0 200px;
+    // TODO: width 100% padding 0 200px to match footer section / maby wrapper?
+
+    h3 {
+      padding-bottom: 90px;
+    }
+    p {
+      padding-bottom: 30px;
+    }
+  }
+  .typography-grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "letter font"
+      "letter weights"
+      "letter alphabet";
+    font-size: 24px;
+  }
+
+  .typography-letter {
+    grid-area: letter;
+    font-size: 600px;
+    font-weight: 900;
+  }
+  .typography-font {
+    grid-area: font;
+    font-weight: 700;
+  }
+  .typography-weights {
+    grid-area: weights;
+  }
+  .typography-alphabet {
+    grid-area: alphabet;
+  }
+  .typography-span {
+    display: block;
+    opacity: 20%;
+    font-size: 16px;
+    font-weight: 400;
+  }
+</style>

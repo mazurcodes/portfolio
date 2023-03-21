@@ -1,5 +1,10 @@
 import type { TechStack } from "./constants";
 
+export type TypographyType = {
+  font: string;
+  weights: number[];
+}
+
 export type ProjectType = {
   id: number;
   slug: string;
@@ -9,7 +14,7 @@ export type ProjectType = {
   technology?: TechStack[];
   userFlow?: string[];
   colors?: string[];
-  typography?: string;
+  typography?: TypographyType;
   screenPaths?: string[];
 };
 

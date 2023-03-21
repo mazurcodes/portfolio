@@ -24,7 +24,10 @@ export const projectsData: ProjectListType = [
     ],
     userFlow: ["main", "search"],
     colors: ["#422400", "#d2d2d2", "#ffd11aff"],
-    typography: "Arial",
+    typography: {
+      font: "Arial",
+      weights: [400, 700, 900],
+    },
     screenPaths: ["@assets/gifter-01.png"],
   },
   {
@@ -37,7 +40,10 @@ export const projectsData: ProjectListType = [
     technology: [TechStack.REACT, TechStack.NEXTJS],
     userFlow: ["main", "search"],
     colors: ["#422400", "#d2d2d2"],
-    typography: "Arial",
+    typography: {
+      font: "Arial",
+      weights: [400, 700, 900],
+    },
     screenPaths: ["@assets/gifter-01.png"],
   },
   {
@@ -50,7 +56,10 @@ export const projectsData: ProjectListType = [
     technology: [TechStack.REACT, TechStack.NEXTJS],
     userFlow: ["main", "search"],
     colors: ["#dddddd", "#d2d2d2"],
-    typography: "Arial",
+    typography: {
+      font: "Arial",
+      weights: [400, 700, 900],
+    },
     screenPaths: ["@assets/gifter-01.png"],
   },
   {
@@ -63,7 +72,10 @@ export const projectsData: ProjectListType = [
     technology: [TechStack.REACT, TechStack.NEXTJS],
     userFlow: ["main", "search"],
     colors: ["#dddddd", "#d2d2d2"],
-    typography: "Arial",
+    typography: {
+      font: "Arial",
+      weights: [400, 700, 900],
+    },
     screenPaths: ["@assets/gifter-01.png"],
   },
   {
@@ -76,7 +88,10 @@ export const projectsData: ProjectListType = [
     technology: [TechStack.REACT, TechStack.NEXTJS],
     userFlow: ["main", "search"],
     colors: ["dddddd", "#d2d2d2"],
-    typography: "Arial",
+    typography: {
+      font: "Arial",
+      weights: [400, 700, 900],
+    },
     screenPaths: ["@assets/gifter-01.png"],
   },
 ];
