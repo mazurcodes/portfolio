@@ -1,12 +1,12 @@
 ---
 interface Props {
-  size: "small" | "large";
+  large?: boolean;
 }
-const { size } = Astro.props;
+const { large } = Astro.props;
 ---
 
 <div class="section-divider">
-  <div class={`divider-line ${size}`}></div>
+  <div class={`divider-line ${large && 'large'}`}></div>
 </div>
 
 <style lang="scss">

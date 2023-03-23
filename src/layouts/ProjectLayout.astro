@@ -40,11 +40,11 @@ const technologies = technologiesData.filter((tech) => {
       <Header />
       <ProjectHero title={project?.title} />
       <ProjectOverview overviewText={project?.overview} />
-      <SectionDiv size="small" />
+      <SectionDiv />
       <ProjectTechnologies technologies={technologies} />
-      <SectionDiv size="large" />
+      <SectionDiv large />
       <ProjectColors colors={project?.colors} />
-      <SectionDiv size="large" />
+      <SectionDiv large />
       <ProjectTypography typography={project?.typography} />
       <Footer />
     </div>
