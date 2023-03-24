@@ -11,6 +11,11 @@
   line-height: 30px;
   text-decoration: none;
   color: black;
+  transition: background-color 0.3s linear;
+
+  &:hover{
+    background-color: hsla(0, 0, 0, 3%);
+  }
 
   @media screen and (max-width: 1200px) {
     width: unset;
@@ -20,6 +25,7 @@
     flex-direction: column;
     align-items: center;
   }
+
 }
 
 .project-id {
