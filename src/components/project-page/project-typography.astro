@@ -9,7 +9,10 @@ const { typography } = Astro.props;
 
 <section class="typography">
   <h3>Typography</h3>
-  <div class="typography-grid" style={`font-family: ${typography?.font}, sans-serif;`}>
+  <div
+    class="typography-grid"
+    style={`font-family: ${typography?.font}, sans-serif;`}
+  >
     <p class="typography-letter">A</p>
     <p class="typography-font">
       <span class="typography-span">font</span>{typography?.font}
@@ -23,12 +26,10 @@ const { typography } = Astro.props;
     </p>
     <p class="typography-alphabet">
       A a B b C c D d E e F f G g H h I i J j K k L l Ł ł M m N n O o P p Q q R
-      r S s T s U u Ó ó W w X x Y y Z z <br> 1 2 3 4 5 6 7 8 9 0
+      r S s T s U u Ó ó W w X x Y y Z z <br /> 1 2 3 4 5 6 7 8 9 0
     </p>
   </div>
 </section>
-
-
 
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
@@ -46,9 +47,19 @@ const { typography } = Astro.props;
       "letter weights"
       "letter alphabet";
 
-    
     font-size: 24px;
     align-items: center;
+
+    @media screen and (max-width: 1700px) {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "letter"
+        "font"
+        "weights"
+        "alphabet";
+    }
+    gap: 50px;
   }
 
   .typography-letter {
@@ -56,6 +67,11 @@ const { typography } = Astro.props;
     font-size: 600px;
     font-weight: 900;
     line-height: 450px;
+
+    @media screen and (max-width: 700px) {
+      font-size: calc(100vw * 0.5);
+      line-height: 1;
+    }
   }
   .typography-font {
     grid-area: font;

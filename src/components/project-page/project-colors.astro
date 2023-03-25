@@ -19,19 +19,26 @@ const { colors } = Astro.props;
 <style lang="scss">
   .colors {
     width: 100%;
-    padding: 0 200px;
 
     h3 {
       padding-bottom: 90px;
     }
     .colors-grid {
       display: grid;
-      grid-template-columns: 400px 200px 200px;
+      grid-template-columns: 400px 200px;
       grid-template-rows: 200px 200px;
-      grid-template-areas: 
-        "large-block small-block-1 small-block-3"
-        "large-block small-block-2 small-block-4";
+      grid-template-areas:
+        "large-block small-block-1"
+        "large-block small-block-2";
       gap: 20px;
+
+      @media screen and (max-width: 850px) {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 400px 200px;
+        grid-template-areas:
+          "large-block large-block"
+          "small-block-1 small-block-2"
+      }
     }
   }
 </style>

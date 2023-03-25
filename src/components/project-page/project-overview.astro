@@ -9,21 +9,20 @@ const { overviewText } = Astro.props;
   <h3>Overview</h3>
   <p>
     {overviewText}
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dignissimos voluptates, reiciendis ea consequuntur quisquam in omnis voluptatem perferendis porro! Ea animi laborum consequatur expedita illum impedit pariatur neque incidunt magnam beatae delectus quisquam soluta magni vel blanditiis, fugiat, facilis doloribus tempora placeat nihil atque ex aperiam sapiente fuga! Alias deserunt aliquam esse! Iure voluptatum perspiciatis incidunt non maxime accusamus illum mollitia? Ea placeat sint cum recusandae, temporibus iusto dolorum fugiat reprehenderit suscipit unde deserunt explicabo est, dolor error commodi! Accusantium sunt sit similique consequuntur veritatis? Ex dicta fuga officiis quod esse, iste, possimus necessitatibus ad veritatis quibusdam sapiente facilis!
   </p>
 </section>
 
 <style lang="scss">
   .overview {
     width: 100%;
-    padding: 0 200px;
-    // TODO: width 100% padding 0 200px to match footer section / maby wrapper?
+    max-width: 700px;
     
     h3 {
       padding-bottom: 90px;
     }
     p {
       padding-bottom: 30px;
+      text-align: justify;
     }
   }
 </style>
