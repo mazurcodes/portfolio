@@ -89,4 +89,28 @@ export const technologiesData: TechnologiesListType = [
       "NextJS is a meta framework for React UI components",
     img: "nextjs-tech-ico.svg",
   },
+  {
+    id: 12,
+    slug: TechStack.STYLED_COMPONENTS,
+    title: "Styled Components",
+    description:
+      "Styled-Components is a React-specific CSS-in-JS styling solution to write actual CSS code to style React components, as well as in React Native",
+    img: "styledcomponents-tech-ico.svg",
+  },
+  {
+    id: 13,
+    slug: TechStack.MARKDOWN_IT,
+    title: "Markdown-It",
+    description:
+      "Markdown parser done right. Fast and easy to extend",
+    img: "markdown-tech-ico.svg",
+  },
+  {
+    id: 14,
+    slug: TechStack.REDUX,
+    title: "Redux",
+    description:
+      "Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments, and are easy to test.",
+    img: "redux-tech-ico.svg",
+  },
 ];
