@@ -13,15 +13,11 @@ export const projectsData: ProjectListType = [
     technology: [
       TechStack.REACT,
       TechStack.NEXTJS,
-      TechStack.ASTRO,
-      TechStack.CYPRESS,
-      TechStack.EXPRESSJS,
       TechStack.HTML,
-      TechStack.JAVASCRIPT,
-      TechStack.TYPESCRIPT,
-      TechStack.PLAYWRIGHT,
       TechStack.SCSS,
-      TechStack.VITEST,
+      TechStack.TYPESCRIPT,
+      TechStack.CYPRESS,
+      TechStack.PLAYWRIGHT,
     ],
     userFlow: ["main", "search"],
     colors: ["#422400", "#d2d2d2", "#ffd11aff"],
@@ -56,7 +52,13 @@ export const projectsData: ProjectListType = [
       "Your favorite markdown editor... Well, at the beginning of the programming jurney the urge to remember everything is huge. Then you realise that not everything need to be remembered...",
     overview:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consequatur, facilis tempore quisquam, voluptates odit eos corrupti, quae labore praesentium voluptate velit aspernatur magni amet delectus dolores necessitatibus officiis porro qui laborum quod dicta voluptatem. Quod iure earum error facilis dicta asperiores at cum possimus corrupti sunt nobis, accusamus, exercitationem voluptate, rerum nihil laborum vel harum maiores nostrum a? Dolore aliquam iste, totam, quibusdam praesentium culpa expedita ducimus a accusamus perferendis cumque ipsum pariatur ullam mollitia aliquid repellat provident officiis maxime commodi quasi odio dolores neque blanditiis? Doloremque quibusdam.",
-    technology: [TechStack.REACT, TechStack.NEXTJS],
+    technology: [
+      TechStack.REACT,
+      TechStack.HTML,
+      TechStack.JAVASCRIPT,
+      TechStack.STYLED_COMPONENTS,
+      TechStack.MARKDOWN_IT,
+    ],
     userFlow: ["main", "search"],
     colors: ["#422400", "#d2d2d2", "#ffd11aff"],
     typography: {
@@ -73,7 +75,7 @@ export const projectsData: ProjectListType = [
       "... and then you need a friend that will run in the background preparing your ‘knowledge’ to be served.",
     overview:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consequatur, facilis tempore quisquam, voluptates odit eos corrupti, quae labore praesentium voluptate velit aspernatur magni amet delectus dolores necessitatibus officiis porro qui laborum quod dicta voluptatem. Quod iure earum error facilis dicta asperiores at cum possimus corrupti sunt nobis, accusamus, exercitationem voluptate, rerum nihil laborum vel harum maiores nostrum a? Dolore aliquam iste, totam, quibusdam praesentium culpa expedita.",
-    technology: [TechStack.REACT, TechStack.NEXTJS],
+    technology: [TechStack.JAVASCRIPT, TechStack.EXPRESSJS],
     userFlow: ["main", "search"],
     colors: ["#422400", "#d2d2d2", "#ffd11aff"],
     typography: {
@@ -90,7 +92,12 @@ export const projectsData: ProjectListType = [
       "Sole purpose of this app was to become my virtual testing pig... for a react-testing-library.",
     overview:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consequatur, facilis tempore quisquam, voluptates odit eos corrupti, quae labore praesentium voluptate velit aspernatur magni amet delectus dolores necessitatibus officiis porro qui laborum quod dicta voluptatem. Quod iure earum error facilis dicta asperiores at cum possimus corrupti sunt nobis, accusamus, exercitationem voluptate, rerum nihil laborum vel harum maiores nostrum a? Dolore aliquam iste, totam, quibusdam praesentium culpa.",
-    technology: [TechStack.REACT, TechStack.NEXTJS],
+    technology: [
+      TechStack.REACT,
+      TechStack.REDUX,
+      TechStack.TYPESCRIPT,
+      TechStack.SCSS,
+    ],
     userFlow: ["main", "search"],
     colors: ["#422400", "#d2d2d2", "#ffd11aff"],
     typography: {
