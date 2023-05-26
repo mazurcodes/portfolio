@@ -6,12 +6,16 @@ import { projectsData } from "@data/projects";
 <section class="projects">
   <h2>Projects</h2>
   <p>
-    I am focused on React and It’s Meta Frameworks. Every project I present you
-    here have a purpose and meaning. Whether it will be implementing some ...,
-    testing components, writing documentation or developing backend
-    infrastructure in Express.
+    Explore my featured projects, each crafted with purpose and precision. From
+    innovative features to seamless user experiences, I bring ideas to life
+    through React and its Meta Frameworks. Whether it's testing components,
+    writing documentation, or developing backend infrastructure with Express, I
+    ensure every project is meticulously executed.
   </p>
   <ProjectList projects={projectsData} />
+  <a href="https://github.com/mazurcodes" target="_blank"
+    >And more on the <span>GitHub</span></a
+  >
 </section>
 
 <style lang="scss">
@@ -36,6 +40,19 @@ import { projectsData } from "@data/projects";
       max-width: 700px;
       text-align: justify;
       padding-bottom: 30px;
+      font-size: 24px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      padding: 50px 0;
+      margin: 50px 0;
+    }
+
+    span {
+      text-decoration: underline;
     }
   }
 </style>

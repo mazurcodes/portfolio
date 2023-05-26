@@ -7,7 +7,7 @@ export const projectsData: ProjectListType = [
     slug: "gifter",
     title: "Gifter",
     description:
-      "How not to love holidays... The clutter is everywhere... maybe as a part of the feeling. The minimalist in me said ‘No’. Get me the gifts that will light me up, help my hobbies, level up my life.",
+      "Gifter is a web application designed to simplify the process of gift-giving. It allows users to create a personalized gift wishlist and share it with friends and family. Whether it's for a birthday, wedding, holiday, or any other special occasion, Gifter makes it easy for both gift recipients and gift-givers to connect and exchange meaningful presents.",
     overview:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consequatur, facilis tempore quisquam, voluptates odit eos corrupti, quae labore praesentium voluptate velit aspernatur magni amet delectus dolores necessitatibus officiis porro qui laborum quod dicta voluptatem. Quod iure earum error facilis dicta asperiores at cum possimus corrupti sunt nobis, accusamus, exercitationem voluptate, rerum nihil laborum vel harum maiores nostrum a?",
     technology: [
@@ -32,7 +32,7 @@ export const projectsData: ProjectListType = [
     slug: "commenteer",
     title: "Commenteer",
     description:
-      "Funny, engaging, sincere, and truthful viewers. Yup, the struggle of the youtuber... Please leave a comment in the comment section of the video... Or not, I’ll do it for you.",
+      "Commenteer is an application specifically designed for media creators to simplify the process of generating multiple comments for their content. It leverages the power of Next.js, TypeScript, and Firebase to provide a seamless user experience.",
     overview:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consequatur, facilis tempore quisquam, voluptates odit eos corrupti, quae labore praesentium voluptate velit aspernatur magni amet delectus dolores necessitatibus officiis porro qui laborum quod dicta voluptatem. Quod iure earum error facilis dicta asperiores at cum possimus corrupti sunt nobis, accusamus, exercitationem voluptate, rerum nihil laborum vel harum maiores nostrum a?",
     technology: [TechStack.REACT, TechStack.NEXTJS],
@@ -84,26 +84,26 @@ export const projectsData: ProjectListType = [
     },
     screenPaths: ["@assets/gifter-01.png"],
   },
-  {
-    id: 5,
-    slug: "weatherapp",
-    title: "Weather App",
-    description:
-      "Sole purpose of this app was to become my virtual testing pig... for a react-testing-library.",
-    overview:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consequatur, facilis tempore quisquam, voluptates odit eos corrupti, quae labore praesentium voluptate velit aspernatur magni amet delectus dolores necessitatibus officiis porro qui laborum quod dicta voluptatem. Quod iure earum error facilis dicta asperiores at cum possimus corrupti sunt nobis, accusamus, exercitationem voluptate, rerum nihil laborum vel harum maiores nostrum a? Dolore aliquam iste, totam, quibusdam praesentium culpa.",
-    technology: [
-      TechStack.REACT,
-      TechStack.REDUX,
-      TechStack.TYPESCRIPT,
-      TechStack.SCSS,
-    ],
-    userFlow: ["main", "search"],
-    colors: ["#422400", "#d2d2d2", "#ffd11aff"],
-    typography: {
-      font: "Arial",
-      weights: [400, 700, 900],
-    },
-    screenPaths: ["@assets/gifter-01.png"],
-  },
+  // {
+  //   id: 5,
+  //   slug: "weatherapp",
+  //   title: "Weather App",
+  //   description:
+  //     "Sole purpose of this app was to become my virtual testing pig... for a react-testing-library.",
+  //   overview:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consequatur, facilis tempore quisquam, voluptates odit eos corrupti, quae labore praesentium voluptate velit aspernatur magni amet delectus dolores necessitatibus officiis porro qui laborum quod dicta voluptatem. Quod iure earum error facilis dicta asperiores at cum possimus corrupti sunt nobis, accusamus, exercitationem voluptate, rerum nihil laborum vel harum maiores nostrum a? Dolore aliquam iste, totam, quibusdam praesentium culpa.",
+  //   technology: [
+  //     TechStack.REACT,
+  //     TechStack.REDUX,
+  //     TechStack.TYPESCRIPT,
+  //     TechStack.SCSS,
+  //   ],
+  //   userFlow: ["main", "search"],
+  //   colors: ["#422400", "#d2d2d2", "#ffd11aff"],
+  //   typography: {
+  //     font: "Arial",
+  //     weights: [400, 700, 900],
+  //   },
+  //   screenPaths: ["@assets/gifter-01.png"],
+  // },
 ];
